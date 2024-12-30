@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BasharPhoto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">BasharPhoto</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="language-menu">
+                <div class="language-toggle">
+                    <input type="radio" id="en" name="language" value="en" checked>
+                    <label for="en">EN</label>
+                    <input type="radio" id="ar" name="language" value="ar">
+                    <label for="ar">عربي</label>
+                </div>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <div class="theme-toggle">
+                <input type="radio" id="light" name="theme" value="light" checked>
+                <label for="light"><i class="fas fa-sun"></i></label>
+                <input type="radio" id="dark" name="theme" value="dark">
+                <label for="dark"><i class="fas fa-moon"></i></label>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <img src="assets/images/3512ff93c75b4b7eff6fcc90a3b1b1e6.jpg" alt="Photography 1">
+                <div class="slide-content">
+                    <h1>Capturing Life's Beautiful Moments</h1>
+                    <p>Professional Photography Services</p>
+                    <a href="#portfolio" class="cta-button">View My Work</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets//images/8-أجمل-الوديان.jpg" alt="Photography 2">
+                <div class="slide-content">
+                    <h1>Creating Timeless Memories</h1>
+                    <p>Expert Photography Solutions</p>
+                    <a href="#contact" class="cta-button">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="nature">Nature</button>
+            <button class="category-btn" data-category="portrait">Portrait</button>
+            <button class="category-btn" data-category="wedding">Wedding</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="nature">
+                <img src="assets/images/8930.jpg_wh860.jpg" alt="Nature Photography">
+                <div class="overlay">
+                    <h3>Nature</h3>
+                    <p>Landscape Photography</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="portrait">
+                <img src="assets/images/3512ff93c75b4b7eff6fcc90a3b1b1e6.jpg" alt="Portrait Photography">
+                <div class="overlay">
+                    <h3>Portrait</h3>
+                    <p>Professional Portraits</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="wedding">
+                <img src="assets/images/f484ed643678ab2e713b8db8b9d6f372.jpg" alt="Wedding Photography">
+                <div class="overlay">
+                    <h3>Wedding</h3>
+                    <p>Wedding Ceremonies</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="nature">
+                <img src="assets/images/تنزيل.jpeg" alt="Nature Photography">
+                <div class="overlay">
+                    <h3>Wildlife</h3>
+                    <p>Nature Photography</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="assets/images/f484ed643678ab2e713b8db8b9d6f372.jpg" alt="Photographer">
+            </div>
+            <div class="about-text">
+                <h3>Professional Photographer</h3>
+                <p>With over 10 years of experience capturing life's most precious moments, I specialize in nature, portrait, and wedding photography. My passion is to tell stories through my lens and create lasting memories for my clients.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="number">500+</span>
+                        <span class="label">Photo Sessions</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">100+</span>
+                        <span class="label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">50+</span>
+                        <span class="label">Awards Won</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required class="full-width">
+                <textarea placeholder="Your Message" required class="full-width"></textarea>
+                <button type="submit" class="full-width">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BasharPhoto. All rights reserved. <span class="designer-credit">Designed & Developed by <a href="#">A.Qasem</a></span></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
